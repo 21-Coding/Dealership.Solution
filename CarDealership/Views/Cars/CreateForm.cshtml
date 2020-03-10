@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Add a new car!</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body class="bg-danger">
+    <h1>Fill in the details below for your new car!</h1>
+    <form action="/cars" method="post">
+     <label for="makeModel">Car Model/Make</label>
+     <input id="makeModel" name="makeModel" type="text">
+     <label for="message">Car Condition </label>
+     <input id="message" name="message" type="text">
+     <label for="price">Sale Price</label>
+     <input id="price" name="price" type="text"> 
+     <label for="miles">Current Mileage</label>
+     <input id="miles" name="miles" type="text">
+     <button class="btn btn-success" type="submit">Add Car</button>
+    </form>
+
+    <a href='/cars'>See list of cars</a>
+  </body>
+</html>
